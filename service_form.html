@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service_Request_Form</title>
+    <link rel="stylesheet" href="service_form.css">
+</head>
+<body>
+    <div class="frame">
+        <!-- Navbar Section -->
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="berry-bard-logo.png" alt="Berry Bard Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="service_form.html">SEO</a></li>
+                        <li><a href="service_form.html">Copywriting</a></li>
+                        <li><a href="service_form.html">Thesis Writing</a></li>
+                        <li><a href="service_form.html">Essay Writing</a></li>
+                        <li><a href="service_form.html">Blog Writing</a></li>
+                        <li><a href="service_form.html">Presentations</a></li>
+                    </ul>
+                </li>
+                <li><a href="company_policies.html" target="_blank">Refund Policy</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="blogs.html" target="_blank">Blog</a></li>
+            </ul>
+            <div class="nav-icons">
+                <input type="text" placeholder="Search...">
+                <a href="#"><img src="shopping-cart.svg" alt="Cart" target="_blank"></a>
+                <a href="login.html"><img src="account.svg" alt="Account"></a>
+            </div>
+        </div>
+
+        <div class="frame">
+            <h1 class="form-heading">Service Request Form</h1>
+            <form class="form-container">
+                <div class="form-section">
+                    <div class="field-group">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="serviceRequired">Service Required:</label>
+                        <select id="serviceRequired" name="serviceRequired" required>
+                            <option value="">Select Service</option>
+                            <option value="SEO">SEO</option>
+                            <option value="Copywriting">Copywriting</option>
+                            <option value="Thesis Writing">Thesis Writing</option>
+                            <option value="Essay Writing">Essay Writing</option>
+                            <option value="Blog Writing">Blog Writing</option>
+                            <option value="Presentations">Presentations</option>
+                        </select>
+                    </div>
+                    <div class="field-group">
+                        <label for="numberOfPages">Number of Pages:</label>
+                        <input type="number" id="numberOfPages" name="numberOfPages" required>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div class="field-group">
+                        <label for="links">Links for Inter-linking:</label>
+                        <textarea id="links" name="links"></textarea>
+                    </div>
+                    <div class="field-group">
+                        <label for="keywords">Keywords:</label>
+                        <textarea id="keywords" name="keywords"></textarea>
+                    </div>
+                    <div class="field-group">
+                        <label for="additionalInfo">Any Additional Information:</label>
+                        <textarea id="additionalInfo" name="additionalInfo"></textarea>
+                    </div>
+                    <div class="field-group">
+                        <label for="uploadDocs">Upload Supporting Documents (If any):</label>
+                        <input type="file" id="uploadDocs" name="uploadDocs" accept=".docx, .pdf, .jpg, .jpeg, .png">
+                    </div>
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <h2 class="footer-heading">Join the Community</h2>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank"><img src="facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="#" target="_blank"><img src="instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="#" target="_blank"><img src="twitterx.svg" alt="X"></a></li>
+                    <li><a href="#" target="_blank"><img src="twitch.svg" alt="Twitch"></a></li>
+                </ul>
+                <p class="copyright">Copyright © 2024, Berry Bard</p>
+            </div>
+        </footer>                 
+    </div>
+</body>
+</html>
